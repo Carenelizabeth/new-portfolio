@@ -13,10 +13,10 @@ export default class ProjectCard extends React.Component{
                             <h3>{this.props.title}</h3>
                         </div>
                         <div className='project-links'>
-                            <a href={this.props.github} target="blank">
+                            <a href={this.props.github} target="blank" rel="noopener noreferrer">
                             <button className='github-link'></button>
                             </a>
-                            <a href={this.props.live} target="blank">VIEW IT LIVE</a>
+                            <a href={this.props.live} target="blank" rel="noopener noreferrer">VIEW IT LIVE</a>
                         </div>
                         <div className='project-text'>
                             <p>{this.props.text}</p>

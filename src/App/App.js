@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ReactGA from 'react-ga';
 import createHistory from 'history/createBrowserHistory';
-import Header from '../Header/header';
-import About from '../About/about';
-import Projects from '../Projects/projects';
-import Experience from '../Experience/experience';
-import Contact from '../Contact/contact';
+import Header from '../Header/header.jsx';
+import About from '../About/about.jsx';
+import Projects from '../Projects/projects.jsx';
+import Experience from '../Experience/experience.jsx';
+import Contact from '../Contact/contact.jsx';
 
 
-const history = createHistory()
+const history = createHistory();
 history.listen(location => {
   ReactGA.set({page: location.pathname})
   ReactGA.pageview(location.pathname)
-})
+});
 
 class App extends Component {
   componentDidMount(){

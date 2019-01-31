@@ -32,7 +32,6 @@ export default class Experience extends React.Component{
                         logoAlt='Caren Keyes original portfolio'
                         title='Original Portfolio Site'
                         image={require('../assets/portfolio.png')}
-                        logoAlt='original portfolio website'
                         content={portfolio}
                     />
                     <ExperienceCard 
@@ -54,7 +53,7 @@ const ArtsConnect = () => {
         <div className='arts-connect expanded-content'>
             <div>
                 <p>
-                I had the opportunity to be the only developer on an amazing team or artists and entrepreneurs.                </p>
+                I had the opportunity to be the only developer on an amazing team of artists and entrepreneurs.                </p>
                 <p>
                 Over about two days, I built out a demo of our space and gear sharing platform for all kinds of artists.                 </p>
                 <div className='card-links'>

@@ -48,7 +48,7 @@
 }
 
 @keyframes unfold {
-    from{transform: rotateX(-70deg)}
+    from{transform: rotateX(-90deg)}
     to{transform: rotateX(-160deg)}
 }
 
