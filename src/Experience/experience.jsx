@@ -50,7 +50,7 @@ export default class Experience extends React.Component{
 
 const ArtsConnect = () => {
     return(
-        <div className='arts-connect expanded-content'>
+        <div className='arts-connect'>
             <div>
                 <p>
                 I had the opportunity to be the only developer on an amazing team of artists and entrepreneurs.                </p>
@@ -75,7 +75,7 @@ const StanTechTop = () => {
 
 const StanTech = () => {
     return(
-        <div className='stan-tech expanded-content'>
+        <div className='stan-tech'>
             <div>
                 <p>I’ve been asked to do a complete redesign of the StanTech website. The commission is to “make it pop.”
                 </p>
@@ -93,7 +93,7 @@ const StanTech = () => {
 
 const Portfolio = () => {
     return(
-        <div className='old-portfolio expanded-content'>
+        <div className='old-portfolio'>
             <div>
                 <p>
                 This was my original portfolio site.  
@@ -112,7 +112,7 @@ const Portfolio = () => {
 
 const ArtStuff = () => {
     return(
-        <div className='rent-stuff expanded-content'>
+        <div className='rent-stuff'>
             <div>
                 <p>
                 I am currently working on a full-featured size for the company that emerged from startup weekend using Mongo, Express, React and Node.  
