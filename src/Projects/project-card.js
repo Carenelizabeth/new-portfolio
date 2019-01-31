@@ -10,12 +10,10 @@ export default class ProjectCard extends React.Component{
 
     flipBack = () => {
         this.setState({showBack: true})
-        console.log('back')
     }
 
     flipFront = () => {
         this.setState({showBack: false})
-        console.log('front')
     }
 
     render(){
