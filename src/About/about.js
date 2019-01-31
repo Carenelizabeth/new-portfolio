@@ -12,8 +12,8 @@ export default function About(props){
                 </p>
                 <p>Now I explore the final frontier of full-stack web development.
                 </p>
-                <p>My speciality is MERN stack (Mongo, Express, React, Node.js), but I'm always learning something
-                    new. I love to making dreams a reality, every step of the way.
+                <p>My speciality is the MERN stack (Mongo, Express, React, Node.js), but I'm always learning something
+                    new. I love to make dreams a reality, every step of the way.
                 </p>
             </div>
         </div>

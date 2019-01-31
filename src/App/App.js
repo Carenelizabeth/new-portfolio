@@ -7,7 +7,6 @@ import About from '../About/about';
 import Projects from '../Projects/projects';
 import Experience from '../Experience/experience';
 import Contact from '../Contact/contact';
-import './app.css';
 
 
 const history = createHistory()
@@ -24,12 +23,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header 
-            setBlue={this.setBlue}
-            setRed={this.setRed}
-            setGreen={this.setGreen}
-            setYellow={this.setYellow}
-          />
+          <Header />
           <main>
             <Switch>
               <Route exact path='/about' component={About}/>
