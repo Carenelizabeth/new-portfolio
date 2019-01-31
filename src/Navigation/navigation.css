@@ -38,10 +38,6 @@
     color: black;
 }
 
-.button.a:visited{
-    color: black;
-}
-
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 100}

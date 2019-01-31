@@ -39,6 +39,10 @@
     transform: rotateY(180deg)
 }
 
+.show-back .project-card{
+    transform: rotateY(180deg)
+}
+
 .project-card-front, .project-card-back{
     position: absolute;
     backface-visibility: hidden;
