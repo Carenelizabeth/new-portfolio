@@ -7,6 +7,7 @@ import About from '../About/about.jsx';
 import Projects from '../Projects/projects.jsx';
 import Experience from '../Experience/experience.jsx';
 import Contact from '../Contact/contact.jsx';
+import Home from './home.jsx';
 
 
 const history = createHistory();
@@ -26,8 +27,9 @@ class App extends Component {
           <Header />
           <main>
             <Switch>
+              <Route exact path='/' component={Home} />
               <Route exact path='/about' component={About}/>
-              <Route exact path='/' component={Projects}/>
+              <Route exact path='/projects' component={Projects}/>
               <Route exact path='/experience' component={Experience}/>
               <Route exact path='/contact' component={Contact}/>
             </Switch>

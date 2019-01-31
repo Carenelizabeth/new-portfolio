@@ -6,7 +6,7 @@ export default function Navigation(props){
     return(
         <div className='nav-panel'>
             <Link to='/about' className='button'>About </Link>
-            <Link to='/' className='button'>Projects</Link>
+            <Link to='/projects' className='button'>Projects</Link>
             <Link to='/experience' className='button'>Experience</Link>
             <Link to='/contact' className='button'>Contact</Link>
         </div>
