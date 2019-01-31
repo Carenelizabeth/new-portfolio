@@ -57,8 +57,8 @@ const ArtsConnect = () => {
                 <p>
                 Over about two days, I built out a demo of our space and gear sharing platform for all kinds of artists.                 </p>
                 <div className='card-links'>
-                    <p><a href='https://www.reviewjournal.com/business/entrepreneurs/artist-connect-takes-first-place-at-startup-weekend-las-vegas-2018-1531226/' target='_blank'>NEWS ARTICLE</a></p>
-                    <p><a href='http://www.artistconnect.co/' target='_blank'>PROTOTYPE</a></p>
+                    <p><a href='https://www.reviewjournal.com/business/entrepreneurs/artist-connect-takes-first-place-at-startup-weekend-las-vegas-2018-1531226/' target='_blank' rel='noopener noreferrer'>NEWS ARTICLE</a></p>
+                    <p><a href='http://www.artistconnect.co/' target='_blank' rel='noopener noreferrer' >PROTOTYPE</a></p>
                 </div>
             </div>
         </div>
@@ -80,12 +80,12 @@ const StanTech = () => {
                 <p>I’ve been asked to do a complete redesign of the StanTech website. The commission is to “make it pop.”
                 </p>
                 <p>
-                With that in mind, I am currently prototyping a series of animations to use on the landing page. The rest of the site will be themed off the initial design. 
+                Since that's rather vague, I am currently prototyping a series of animations to use on the landing page. The rest of the site will be themed off the initial design. 
                 </p>
             </div>
             <div className='card-links'>
-                <p><a href='https://carenelizabeth.github.io/stantech-ideas/' target='_blank'>IDEA DEMO</a></p>
-                <p><a href='https://github.com/Carenelizabeth/stantech-ideas' target='_blank'>RESPOSITORY</a></p>
+                <p><a href='https://carenelizabeth.github.io/stantech-ideas/' target='_blank' rel='noopener noreferrer'>IDEA DEMO</a></p>
+                <p><a href='https://github.com/Carenelizabeth/stantech-ideas' target='_blank' rel='noopener noreferrer'>RESPOSITORY</a></p>
             </div>
         </div>
     )
@@ -103,8 +103,8 @@ const Portfolio = () => {
                 </p>
             </div>
             <div className='card-links'>
-                <p><a href='https://carenelizabeth.github.io/my-portfolio/' target='_blank'>WEBSITE</a></p>
-                <p><a href='https://github.com/Carenelizabeth/my-portfolio' target='_blank'>RESPOSITORY</a></p>
+                <p><a href='https://carenelizabeth.github.io/my-portfolio/' target='_blank' rel='noopener noreferrer'>WEBSITE</a></p>
+                <p><a href='https://github.com/Carenelizabeth/my-portfolio' target='_blank' rel='noopener noreferrer'>RESPOSITORY</a></p>
             </div>
         </div>
     )
@@ -120,7 +120,7 @@ const ArtStuff = () => {
                 <p>Completed features include a multi-step form for uploading listings and complex user profiles. Currently working on scheduling and reservation systems. </p>
             </div>
             <div className='card-links'>
-                <p><a href='https://github.com/Carenelizabeth/arts-client' target='_blank'>CLIENT-SIDE RESPOSITORY</a></p>
+                <p><a href='https://github.com/Carenelizabeth/arts-client' target='_blank' rel='noopener noreferrer'>CLIENT-SIDE RESPOSITORY</a></p>
             </div>
         </div>
     )
