@@ -43,7 +43,7 @@
     100% {opacity: 100}
 }
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 500px){
     .nav-panel{
         width: 400px;
     }
@@ -53,7 +53,7 @@
     }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 700px){
     .nav-panel{
         width: 520px;
     }

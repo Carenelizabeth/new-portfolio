@@ -8,7 +8,7 @@
 .project-card-container{
     width: 300px;
     height: 400px;
-    margin-bottom: 20px;
+    margin: 15px 5px;
     perspective: 1000px;
 }
 
