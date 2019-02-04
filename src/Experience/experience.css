@@ -1,3 +1,7 @@
+.outside-wrapper{
+    position: relative;
+    margin-bottom: 40px;
+}
 
 .card-wrapper{
     display: flex;
@@ -6,68 +10,57 @@
     margin-bottom: 400px;
 }
 
-.outside-wrapper{
-    position: relative;
-    margin-bottom: 40px;
-}
-
 .experience-card-container{
     position: relative;
-    z-index: 5;
     width: 300px;
-    height: 225px;
+    height: 265px;
+    perspective: 1000px;
+}
+
+.experience-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back{
+    position: absolute;
     background-color: #f0e9e8;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    height: 265px;
+    width: 100%;
+    padding: 20px;
+    transform: rotateX(180deg);
+}
+
+.experience-card-container:hover .experience-card{
+    transform: rotateX(180deg);
+}
+
+.show-back .experience-card{
+    transform: rotateX(180deg);
 }
 
 .card-topper{
     position: relative; 
-    z-index: 5;
     height: 40px;
     width: 100%;
     background-color: #aa3281;
 }
 
 .card-intro{
-    position: absolute;
-    z-index: 5;
-    height: 185px;
+    position: relative;
+    height: 225px;
     width: 100%;
 }
 
-.expanded-card{
-    position: absolute;
-    top: 2px;
-    height: 472px;
-    width: 302px;
-    z-index: 10;
-    perspective: 2000px;
-    perspective-origin: 0 50%;
-    transform-style: preserve-3d;
-    transform: rotateX(-160deg);
-    animation: unfold 1s;
-}
-
-@keyframes unfold {
-    from{transform: rotateX(-90deg)}
-    to{transform: rotateX(-160deg)}
-}
-
-.card-section{
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    backface-visibility: hidden;
-}
-
-.expanded-card-front{
-    background-color: #fcfcfc;
-}
-
-.expanded-card-back{
-    background-image: linear-gradient(#e0d3d1, #fcfbfa);
-    transform: rotateX(175deg);
-    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
-}
 
 .card-topper img{
     height: 100%;
@@ -78,15 +71,25 @@
     width: 100%;
 }
 
-.card-title{
+.card-title, .card-title-back{
     height: 40px;
     position: absolute;
-    bottom: 0;
     width: 100%;
     background-color: #f0e9e8;
     display: flex;
     padding: 10px;
     border-top: solid 2px #aa3281;
+    backface-visibility: hidden;
+}
+
+.card-title{
+    bottom: 0;
+}
+
+.card-title-back{
+    top: 0;
+    margin-left: -20px;
+    display: none;
 }
 
 .card-title h3{
@@ -97,29 +100,30 @@
     padding: 20px;
 }
 
-.expanded-content p{
-    font-size: 12px;
+.card-back p{
+    font-size: 16px;
 }
 
 .card-links{
     position: absolute;
     bottom: 0;
+    backface-visibility: hidden;
+    text-transform: uppercase;
 }
-
-
 
 .plant-animation{
     position: absolute;
     bottom: -5px;
     left: 180px;
-    height: 208px;
-    width: 100px;
+    height: 260px;
+    width: 125px;
     background-image: url('../assets/plant-sprite.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: 3900%;
     animation: grow 3.5s steps(38) 1;
     z-index: 10;
+    backface-visibility: hidden;
 }
 
 @keyframes grow{
@@ -131,7 +135,6 @@
     .experience-card-container{
         width: 400px;
         height: 300px;
-        background-color: #f0e9e8;
         margin: 20px;
     }
 
@@ -143,14 +146,19 @@
         height: 240px;
     }
     
-    .expanded-card{
-        height: 602px;
-        width: 403px;
-        margin: 20px;
+    .card-back{
+        height: 300px;
+        width: 400px;
     }
 
-    .card-section{
-        height: 300px;
+    .card-title-back{
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #aa3281;
+    }
+
+    .card-back-text{
+        margin-top: 50px;
     }
 
     .card-title h3{
@@ -170,9 +178,5 @@
 
     .card-links{
         margin-bottom: 10px;
-    }
-
-    .expanded-card-back{
-        padding-top: 20px;
     }
 }
