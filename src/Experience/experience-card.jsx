@@ -36,11 +36,14 @@ export default class ExperienceCard extends React.Component{
                             </div>
                         </div>
                         <div className='card-back'>
-                            <div>
+                            <div className='card-title-back'>
+                                <h3>{this.props.title}</h3>
+                            </div>
+                            <div className='card-back-text'>
                                 <p>{this.props.p1}</p>
                                 <p>{this.props.p2}</p>
                             </div>
-                            <div className='card-links'>
+                            <div className='card-links'> 
                                 <p>
                                     <a href={this.props.a1}
                                         target='_blank' rel='noopener noreferrer'
