@@ -45,7 +45,7 @@
 }
 
 .show-back .experience-card{
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 .card-topper{
@@ -99,6 +99,7 @@
     position: absolute;
     bottom: 0;
     backface-visibility: hidden;
+    text-transform: uppercase;
 }
 
 .plant-animation{

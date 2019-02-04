@@ -8,13 +8,21 @@ export default class ExperienceCard extends React.Component{
         }
     }
 
-     render(){
-        let image = this.props.image? <img src={this.props.image} alt={this.props.title}/> : null;
+    flipBack = () => {
+        this.setState({showBack: true})
+    }
 
+    flipFront = () => {
+        this.setState({showBack: false})
+    }
+
+    render(){
+        let image = this.props.image? <img src={this.props.image} alt={this.props.title}/> : null;
+        let parentDivClass = this.state.showBack? 'experience-card-container show-back': 'experience-card-container';
         return(
             <div className='outside-wrapper'>
-                <div className='experience-card-container'>
-                    <div className='experience-card'>
+                <div className={parentDivClass}>
+                    <div className='experience-card'>     
                         <div className='card-front'>
                             <div className='card-topper'>
                                 <img src={this.props.logo} alt={this.props.logoAlt} />
@@ -27,16 +35,37 @@ export default class ExperienceCard extends React.Component{
                                 </div>
                             </div>
                         </div>
-
                         <div className='card-back'>
-                            {this.props.content}
+                            <div>
+                                <p>{this.props.p1}</p>
+                                <p>{this.props.p2}</p>
+                            </div>
+                            <div className='card-links'>
+                                <p>
+                                    <a href={this.props.a1}
+                                        target='_blank' rel='noopener noreferrer'
+                                        onFocus={this.flipBack}
+                                        onBlur={this.flipFront}
+                                    >{this.props.a1Text}</a>
+                                </p>
+                                <p>
+                                    <a href={this.props.a2}
+                                        target='_blank' rel='noopener noreferrer'
+                                        onFocus={this.flipBack}
+                                        onBlur={this.flipFront}
+                                    >{this.props.a2Text}</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         )
     }
 }
+
+
 
 
 
