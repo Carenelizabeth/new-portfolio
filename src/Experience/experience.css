@@ -106,9 +106,14 @@
 
 .card-links{
     position: absolute;
+    z-index: 10;
     bottom: 0;
     backface-visibility: hidden;
     text-transform: uppercase;
+}
+
+.card-links a:hover{
+    color: #526c19;
 }
 
 .plant-animation{
@@ -140,10 +145,12 @@
 
     .card-topper{
         height: 60px;
+        backface-visibility: hidden;
     }
 
     .card-intro{
         height: 240px;
+        backface-visibility: hidden;
     }
     
     .card-back{
@@ -174,6 +181,7 @@
         left: 250px;
         height: 312px;
         width: 150px;
+        backface-visibility: hidden;
     }
 
     .card-links{
