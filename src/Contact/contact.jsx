@@ -10,7 +10,7 @@ export default function Contact(props){
                 <a href='https://github.com/Carenelizabeth' target='_blank' className='github-button image-link' rel='noopener noreferrer'>Github</a>
                 <a href='https://www.linkedin.com/in/caren-keyes-5595b130/' target='_blank' className='linked-button image-link' rel='noopener noreferrer'>Linked In</a>
                 <a href='https://twitter.com/caren_keyes' target='_blank' className='twitter-button image-link' rel='noopener noreferrer'>Twitter</a>
-                <a href='mailto:Caren Keyes<cejkeye@gmail.com>' target='_blank' className='email-button image-link' rel='noopener noreferrer'>Email</a>
+                <a href='mailto:Caren Keyes<cejkeyes@gmail.com>' target='_blank' className='email-button image-link' rel='noopener noreferrer'>Email</a>
             </div>
         </div>
     )
