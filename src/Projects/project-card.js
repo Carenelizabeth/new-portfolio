@@ -36,7 +36,8 @@ export default class ProjectCard extends React.Component{
                             >
                                 Github
                             </a>
-                            <a href={this.props.live} target='blank' rel='noopener noreferrer' 
+                            <a href={this.props.live} 
+                                target='blank' rel='noopener noreferrer' 
                                 onFocus={this.flipBack}
                                 onBlur={this.flipFront}
                             >VIEW IT LIVE</a>

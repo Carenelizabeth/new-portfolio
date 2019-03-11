@@ -51,7 +51,7 @@ export default class Experience extends React.Component{
                         logoAlt='Rent Art Stuff'
                         title='Rent Art Stuff MVP'
                         image={require('../assets/artstuff.png')}
-                        p1='I am currently working on a full-featured size for the company that emerged from startup weekend using Mongo, Express, React and Node.'
+                        p1='I am currently working on a full-featured site for the company that emerged from startup weekend using Mongo, Express, React and Node.'
                         p2='Completed features include a multi-step form for uploading listings and complex user profiles. Currently working on scheduling and reservation systems.'
                         a1='https://github.com/Carenelizabeth/arts-client'
                         a1Text='client-side repository'
